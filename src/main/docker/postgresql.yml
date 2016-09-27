@@ -1,0 +1,12 @@
+version: '2'
+services:
+    simplejavatest-postgresql:
+        container_name: simplejavatest-postgresql
+        image: postgres:9.5.4
+        # volumes:
+        #     - ~/volumes/jhipster/SimpleJavaTest/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=SimpleJavaTest
+            - POSTGRES_PASSWORD=
+        ports:
+            - 5432:5432
